@@ -18,7 +18,11 @@ const Navbar = () => {
             return (
               <li key={link.id}>
                 {' '}
-                <a href={link.href} className="nav-link">
+                <a
+                  href={link.href}
+                  className="nav-link"
+                  rel="noopener noreferrer"
+                >
                   {' '}
                   {link.text}
                 </a>
@@ -32,7 +36,12 @@ const Navbar = () => {
             const { id, href, icon } = link;
             return (
               <li key={id}>
-                <a href={href} target="_blank" className="nav-icon">
+                <a
+                  href={href}
+                  target="_blank"
+                  className="nav-icon"
+                  rel="noopener noreferrer"
+                >
                   <i className={icon}></i>
                 </a>
               </li>
